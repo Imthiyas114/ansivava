@@ -110,7 +110,7 @@
         <p id="response"></p> <!-- Text that will show typing effect -->
 
         <div id="reel">
-            <video id="v" src="./ansinew1.mp4" autoplay loop muted
+            <video id="v" src="./ansinew1.mp4" autoplay loop 
                 ></video>
         </div>
     </div>
@@ -146,7 +146,7 @@
             event.preventDefault();
             const userInput = document.getElementById('userInput').value;
 
-            if (userInput.trim() !== "") {
+            if (userInput.trim() === "Who") {
                 reelDiv.style.display = 'none'; // Ensure the video is hidden initially
                 backDiv.style.backgroundImage = ''; // Clear background
 
